@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bot-background: 15 15 15;
+  --bot-surface: 23 23 23;
+  --bot-elevated: 33 33 33;
+  --bot-border: 52 52 52;
+  --bot-foreground: 247 248 248;
+  --bot-muted: 163 163 163;
+  --bot-accent: 21 220 172;
+  --bot-accent-foreground: 8 37 30;
+  --bot-danger: 255 119 119;
+}
+
+html {
+  background: rgb(var(--bot-background));
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--bot-background));
+  color: rgb(var(--bot-foreground));
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgb(var(--bot-accent));
+  color: rgb(var(--bot-accent-foreground));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
