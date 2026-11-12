@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ethers } from 'ethers';
-import { ArrowUpRight, Check, Loader2, Wallet } from 'lucide-react';
+import { Check, Loader2, Wallet } from 'lucide-react';
 import BuyCoffeeForm from './components/BuyCoffeeForm';
 import CoffeeFooter from './components/CoffeeFooter';
 import CoffeeHeader from './components/CoffeeHeader';
@@ -154,15 +154,6 @@ function App() {
                 <dd className="font-mono text-sm font-semibold tabular-nums">BOT</dd>
               </div>
             </dl>
-
-            <a
-              className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-bot-accent underline-offset-4 transition-colors hover:text-bot-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bot-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bot-background"
-              href="https://scan.botchain.ai"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Explore BOT Chain <ArrowUpRight aria-hidden="true" size={16} />
-            </a>
           </section>
 
           <section className="min-w-0 space-y-4">
